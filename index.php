@@ -9,10 +9,9 @@
 						<div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-phone mdl-cell--6-col-tablet mdl-shadow--2dp">
 							<div class="mdl-card mdl-js-card">
 								<div class="mdl-card__title mdl-card--border">
-									<div class="mdl-card__title-tex">Olá, seja bem-vindo ao GreenCloud</div>
+									<div class="mdl-card__title-tex"><h4>Olá, seja bem-vindo ao GreenCloud</h4></div>
 								</div>
-								<div class="mdl-card__supporting-text">
-									Aqui você pode compartilhar Arquivos de todos os tipos:
+								<div class="mdl-card__supporting-text"><b><p><h6>Aqui você pode compartilhar Arquivos de todos os tipos:</h6></p></b>
 									<div class="demo-list-icon mdl-list">
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
@@ -22,7 +21,7 @@
 										</li>
 										<li class="mdl-list__item">
 											<span class="mdl-list__item-primary-content">
-											<i class="material-icons mdl-list__item-icon">picture</i>
+											<i class="material-icons mdl-list__item-icon">burst_mode</i>
 											Fotos
 											</span>
 										</li>
