@@ -1,5 +1,5 @@
 <?php
-
+shell_exec('mkdir uploads/');
 shell_exec('chmod 777 uploads/');
 
 
