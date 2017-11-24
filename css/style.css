@@ -1,0 +1,44 @@
+.mdl-grid.center-items{
+	justify-content: center;
+}
+
+.demo-card-wide.mdl-card {
+	  // width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 170px;
+  background: url('../imgs/dark-cloud-3.jpgd') center / cover};
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+
+.mdl-card{
+	width: 100%;
+	
+}
+
+..mdl-layout__drawer-button{
+	color: white;
+}
+
+
+.mdl-button--file input {
+  cursor: pointer;
+  height: 100%;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  z-index: 4;
+}
+.mdl-textfield--file .mdl-textfield__input {
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+}
+.mdl-textfield--file .mdl-button--file {
+  right: 0;
+}
