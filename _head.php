@@ -30,14 +30,14 @@
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
 	      <nav class="mdl-navigation mdl-layout--large-screen-only">
-      		<a class="mdl-button mdl-js-button" style="color: white;"  href="/">Home</a>
+      		<a class="mdl-button mdl-js-button" style="color: white;"  href="index.php">Home</a>
 	        <a class="mdl-button mdl-js-button" style="color: white;"  href="upload.php">Upload</a>
 	        <a class="mdl-button mdl-js-button" style="color: white;"  href="download.php">Downlaods</a>
 	      </nav>
 	    </div>
 	  </header>
 	  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-	    <span class="mdl-layout-title"><a href="/" style="text-decoration: none; color: black;"><img src="imgs/sitelogo3.png" style="width: 60px; height: 40px;">GreenCloud</a></span>
+	    <span class="mdl-layout-title"><a href="index.php" style="text-decoration: none; color: black;"><img src="imgs/sitelogo3.png" style="width: 60px; height: 40px;">GreenCloud</a></span>
 	    <nav class="mdl-navigation" style="color: white;">
 	        <a class="mdl-button mdl-js-button " href="/">Home</a>
 	        <a class="mdl-button mdl-js-button " href="upload.php">Upload</a>
