@@ -43,20 +43,3 @@
   right: 0;
 
 }
-
-.mdl-layout__content {
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-flex-flow: column nowrap;
--ms-flex-flow: column nowrap;
-flex-flow: column nowrap;
-}
-
-.mdl-layout__content > *:not(.mdl-layout-spacer) {
--webkit-flex: none;
--ms-flex: none;
-flex: none;
-}
-
-
