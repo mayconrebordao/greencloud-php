@@ -25,7 +25,7 @@
 	  <header class="mdl-layout__header ">
 	    <div class="mdl-layout__header-row ">
 	      <!-- Title -->
-	      <span class="mdl-layout-title"><a href="/" style="text-decoration: none; color: white;">GreenCloud</a></span>
+	      <span class="mdl-layout-title"><a class="" href="/" style="text-decoration: none; color: white;"><img src="imgs/sitelogo3.png" style="width: 60px; height: 40px;"><span style="">GreenCloud</span></a></span>
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
@@ -37,7 +37,7 @@
 	    </div>
 	  </header>
 	  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-	    <span class="mdl-layout-title"><a href="/" style="text-decoration: none; color: black;">GreenCloud</a></span>
+	    <span class="mdl-layout-title"><a href="/" style="text-decoration: none; color: black;"><img src="imgs/sitelogo3.png" style="width: 60px; height: 40px;">GreenCloud</a></span>
 	    <nav class="mdl-navigation" style="color: white;">
 	        <a class="mdl-button mdl-js-button " href="/">Home</a>
 	        <a class="mdl-button mdl-js-button " href="upload.php">Upload</a>
