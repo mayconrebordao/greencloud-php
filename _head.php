@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">  
-	<link rel="stylesheet" href="css/material.green-light_green.min.css">
+	<link rel="stylesheet" href="css/material.blue_grey-deep_orange.min.css">
 	<link rel="stylesheet" href="css/dist/material-design-icons.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/material.min.js"></script>
