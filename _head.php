@@ -3,10 +3,10 @@
 <head>
 	<title>GreenCloud</title>
 	<meta charset="utf-8">
-    <meta name="theme-color" content="#2196F3">
-    <meta name="msapplication-navbutton-color" content="#2196F3">
+    <meta name="theme-color" content="#b3d4fc">
+    <meta name="msapplication-navbutton-color" content="#b3d4fc">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#2196F3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b3d4fc">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="turbolinks-cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
