@@ -1,68 +1,71 @@
 <?php require_once("_head.php"); ?>
-		<main class="mdl-layout__content">
-			<div class="mdl-grid center-items ">
-				<div class="mdl-shadow--2dp mdl-cell " style="width: 100%;">
-					<h1 class=" mdl-shadow--2dp " style="text-align: center;width: 100%;margin: 0px; ">
-						Download de Arquivos
-					</h1>
-					<div class="" style="max-height: 600px; overflow: auto;">
+		<div>
+			<main >
+				<div class="mdl-grid center-items ">
+					<div class="mdl-shadow--2dp mdl-cell " style="width: 100%;">
+						<h1 class=" mdl-shadow--2dp " style="text-align: center;width: 100%;margin: 0px; ">
+							Download de Arquivos
+						</h1>
+						<div class="" style="max-height: 600px; overflow: auto;">
 
-						<?php 
-							$path     = './uploads/';
-							$dir      = new RecursiveDirectoryIterator($path);
-							$iterator = new RecursiveIteratorIterator($dir);
+							<?php 
+								$path     = './uploads/';
+								$dir      = new RecursiveDirectoryIterator($path);
+								$iterator = new RecursiveIteratorIterator($dir);
 
-							$filterIterator = new RegexIterator(
-								$iterator,
-								'/^.+\.php$/i',
-								RecursiveRegexIterator::GET_MATCH
-							);
-							foreach ($iterator as $item) {
-								// Verifica se é um arquivo
-									// echo '<script>alert("asdasdasdsd");</script>';
-								if ($item->isFile()) {
-									// echo "<br/>";
-									// echo "<br> err ";
-									// $path = explode("/", $item);
-									// echo $path[sizeof($path)-1];
-									// echo explode("/", $item)[-1];
-									// echo "<br>";
-									$path = realpath($item);
-									// echo $path;
-									// break;
-									$name = basename($path);
+								$filterIterator = new RegexIterator(
+									$iterator,
+									'/^.+\.php$/i',
+									RecursiveRegexIterator::GET_MATCH
+								);
+								foreach ($iterator as $item) {
+									// Verifica se é um arquivo
+										// echo '<script>alert("asdasdasdsd");</script>';
+									if ($item->isFile()) {
+										// echo "<br/>";
+										// echo "<br> err ";
+										// $path = explode("/", $item);
+										// echo $path[sizeof($path)-1];
+										// echo explode("/", $item)[-1];
+										// echo "<br>";
+										$path = realpath($item);
+										// echo $path;
+										// break;
+										$name = basename($path);
 
 
-									echo ' 
-										<div class="mdl-grid mdl-shadow--2dp" style="margin: 10px;">
-											<div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--1-col-phone mdl-cell--1-col-tablet" style="margin-top: 20px;">
-												<a href="filedown.php?file='.$path.'"  class="mdl-button mdl-js-button mdl-button--colored mdl-button--fab mdl-button--mini-fab"><i class="material-icons">cloud_download</i></a>
+										echo ' 
+											<div class="mdl-grid mdl-shadow--2dp" style="margin: 10px;">
+												<div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--1-col-phone mdl-cell--1-col-tablet" style="margin-top: 20px;">
+													<a href="filedown.php?file='.$path.'"  class="mdl-button mdl-js-button mdl-button--colored mdl-button--fab mdl-button--mini-fab"><i class="material-icons">cloud_download</i></a>
+												</div>
+												<div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--3-col-phone mdl-cell--5-col-tablet" style="margin-top: 20px;">
+												'.$name.'
+												</div>
 											</div>
-											<div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--3-col-phone mdl-cell--5-col-tablet" style="margin-top: 20px;">
-											'.$name.'
-											</div>
-										</div>
-									 ';
+										 ';
 
+									}
 								}
-							}
 
 
-						 ?>
+							 ?>
 
+						</div>
 					</div>
+			    </div>
+				<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+					<div class="mdl-snackbar__text"></div>
+					<button class="mdl-snackbar__action" type="button"></button>
 				</div>
-		    </div>
-			<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
-				<div class="mdl-snackbar__text"></div>
-				<button class="mdl-snackbar__action" type="button"></button>
-			</div>
-			<div id="erroalert" class="mdl-js-snackbar mdl-snackbar">
-				<div class="mdl-snackbar__text"></div>
-				<button class="mdl-snackbar__action" type="button"></button>
-			</div>
-		</main>
-		<?php require_once("_footer.php"); ?>
+				<div id="erroalert" class="mdl-js-snackbar mdl-snackbar">
+					<div class="mdl-snackbar__text"></div>
+					<button class="mdl-snackbar__action" type="button"></button>
+				</div>
+			</main>
+
+			<?php require_once("_footer.php"); ?>
+		</div>
 	</div>
 
 

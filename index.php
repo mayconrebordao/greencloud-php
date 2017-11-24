@@ -20,8 +20,8 @@
 				</div>
 
 	  		</div>
-	  	</main>
 	  	<?php require_once("_footer.php"); ?>
+	  	</main>
 	</div>
 </body>
 </html>

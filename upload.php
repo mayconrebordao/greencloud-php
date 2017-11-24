@@ -62,8 +62,8 @@
 				<button class="mdl-snackbar__action" type="button"></button>
 			</div>
 
-		</main>
 		<?php require_once("_footer.php"); ?>
+		</main>
 	</div>
 
 
