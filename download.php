@@ -62,9 +62,9 @@
 					<div class="mdl-snackbar__text"></div>
 					<button class="mdl-snackbar__action" type="button"></button>
 				</div>
+			<?php require_once("_footer.php"); ?>
 			</main>
 
-			<?php require_once("_footer.php"); ?>
 		</div>
 	</div>
 

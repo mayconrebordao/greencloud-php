@@ -5,6 +5,9 @@
       <h1 class=" mdl-mega-footer__heading"><img src="imgs/ic_contact_mail_24px.svg" alt=""></h1>
       <ul class="mdl-mega-footer__link-list">
         <li><a>r.maycon1122@gmail.com</a></li>
+        <li><a>mmmateusoliveira@gmail.com</a></li>
+        <li><a>mateusfsasp@gmail.com</a></li>
+        <li><a>r.maycon1122@gmail.com</a></li>
       </ul>
     </div>
 
