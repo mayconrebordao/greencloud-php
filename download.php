@@ -1,5 +1,5 @@
 <?php require_once("_head.php"); ?>
-		<div>
+		
 			<main class="mdl-layout__content" >
 				<div class="mdl-grid center-items ">
 					<div class="mdl-shadow--2dp mdl-cell " style="width: 100%;">
@@ -66,7 +66,7 @@
 			<?php require_once("_footer.php"); ?>
 			</main>
 
-		</div>
+		
 	</div>
 
 
