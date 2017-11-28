@@ -1,6 +1,6 @@
 <?php require_once("_head.php"); ?>
 		<div>
-			<main >
+			<main class="mdl-layout__content" >
 				<div class="mdl-grid center-items ">
 					<div class="mdl-shadow--2dp mdl-cell " style="width: 100%;">
 						<h1 class=" mdl-shadow--2dp " style="text-align: center;width: 100%;margin: 0px; ">
