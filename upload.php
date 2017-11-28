@@ -18,7 +18,7 @@
 											  <input class="mdl-textfield__input" placeholder="No file chosen" type="text" id="TEXT_ID" readonly />
 											  <div class="mdl-button mdl-button--icon mdl-button--file " >
 											    <i class="material-icons mdl-js-button mdl-button-raised">attach_file</i>
-											    <input type= file multiple name="file1[]"  onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
+											    <input type= file multiple name="file1[]" id="file1" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
 											  </div>
 											</div>
 
@@ -37,7 +37,7 @@
 
 										</div>
 										<div class="mdl-card__actions mdl-card--border">
-										  		<input onclick="uploadFile()" style="" type="button" value="ENVIAR_cloud_upload"  class="material-icons mdl-button--primary mdl-button mdl-js-button mdl-button--colored mdl-button--raised mdl-js-ripple-effect" style="opacity: 10; color: black;" >
+										  		<input id="send" onclick="uploadFile()" style="" type="button" value="ENVIAR_cloud_upload"  class="material-icons mdl-button--primary mdl-button mdl-js-button mdl-button--colored mdl-button--raised mdl-js-ripple-effect" style="opacity: 10; color: black;" >
 												<!-- <i class="material-icons">cloud_upload</i> -->
 											<span class="" >
 											</span>
@@ -83,6 +83,7 @@ function uploadFile(){
 	// alert(file.name+" | "+file.size+" | "+file.type);
 	var formdata = new FormData();
 	var numfiles = _("file1").files.length;
+
 	if (numfiles>20){
 		alert("É permitido o envio de no maximo 20 Arquivos!");
 	}
@@ -91,6 +92,8 @@ function uploadFile(){
 	 	_("demo-toast-example").MaterialSnackbar.showSnackbar(data);
 	}
 	else{
+
+		_("send").disabled = true ;
 
 		for (var i = 0; i < numfiles; i++) {
 			formdata.append('file1[]', _("file1").files[i]);
@@ -122,7 +125,7 @@ function completeHandler(event){
 	var texto = event.target.responseText;
 	// alert(texto[0]);
 	
-	alert(texto);
+	// alert(texto);
 	// _("status").innerHTML = data;
 	// _("progressBar").value = 0;
 	_("p1").MaterialProgress.setProgress(0);
@@ -151,7 +154,7 @@ function completeHandler(event){
 	_("porcent").innerHTML = "";
 	_('porcent').style.display = "none";
 	_('p1').style.display = "none";
-
+	_("send").disabled = false;
 
 }
 function errorHandler(event){
