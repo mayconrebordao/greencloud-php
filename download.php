@@ -9,6 +9,7 @@
 						<div class="" style="max-height: 600px; overflow: auto;">
 
 							<?php 
+								shell_exec("mkdir uploads/");
 								$path     = './uploads/';
 								$dir      = new RecursiveDirectoryIterator($path);
 								$iterator = new RecursiveIteratorIterator($dir);
