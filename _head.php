@@ -32,7 +32,7 @@
 	      <nav class="mdl-navigation mdl-layout--large-screen-only">
       		<a class="mdl-button mdl-js-button" style="color: white;"  href="index.php">Home</a>
 	        <a class="mdl-button mdl-js-button" style="color: white;"  href="upload.php">Upload</a>
-	        <a class="mdl-button mdl-js-button" style="color: white;"  href="download.php">Downlaods</a>
+	        <a class="mdl-button mdl-js-button" style="color: white;"  href="download.php">Downloads</a>
 	      </nav>
 	    </div>
 	  </header>
@@ -41,6 +41,6 @@
 	    <nav class="mdl-navigation" style="color: white;">
 	        <a class="mdl-button mdl-js-button " href="/">Home</a>
 	        <a class="mdl-button mdl-js-button " href="upload.php">Upload</a>
-	        <a class="mdl-button mdl-js-button " href="download.php">Downlaods</a>
+	        <a class="mdl-button mdl-js-button " href="download.php">Downloads</a>
 	    </nav>
 	  </div>
