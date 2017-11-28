@@ -1,4 +1,5 @@
 <?php require_once("_head.php"); ?>
+	<div>
 		
 			<main class="mdl-layout__content" >
 				<div class="mdl-grid center-items ">
