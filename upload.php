@@ -18,7 +18,7 @@
 											  <input class="mdl-textfield__input" placeholder="No file chosen" type="text" id="TEXT_ID" readonly />
 											  <div class="mdl-button mdl-button--icon mdl-button--file " >
 											    <i class="material-icons mdl-js-button mdl-button-raised">attach_file</i>
-											    <input type= file multiple name="file1[]" id="file1" onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
+											    <input type= file multiple name="file1[]"  onchange="document.getElementById('TEXT_ID').value=this.files[0].name;" />
 											  </div>
 											</div>
 
@@ -89,7 +89,6 @@ function uploadFile(){
 	else if (numfiles<1) {
 		var data = {message: 'Erro Nenhum Arquivo Selecionado!'};
 	 	_("demo-toast-example").MaterialSnackbar.showSnackbar(data);
-		
 	}
 	else{
 
@@ -123,7 +122,7 @@ function completeHandler(event){
 	var texto = event.target.responseText;
 	// alert(texto[0]);
 	
-	// alert(texto);
+	alert(texto);
 	// _("status").innerHTML = data;
 	// _("progressBar").value = 0;
 	_("p1").MaterialProgress.setProgress(0);
