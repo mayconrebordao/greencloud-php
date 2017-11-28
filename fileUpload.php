@@ -36,7 +36,7 @@ if ($size < 1900000000){
 
 	for ($i=0, $n = count($_FILES['file1']); $i < $n ; $i++) { 
 		# code...
-		$fileName = $_FILES["file1"]["name"][$i]; // The file name
+		$fileName = date ("Y-m-d_h:m").$_FILES["file1"]["name"][$i]; // The file name
 		$fileTmpLoc = $_FILES["file1"]["tmp_name"][$i]; // File in the PHP tmp folder
 		$fileType = $_FILES["file1"]["type"][$i]; // The type of file it is
 		$fileSize = $_FILES["file1"]["size"][$i]; // File size in bytes
@@ -47,15 +47,15 @@ if ($size < 1900000000){
 		}
 
 
-		if(is_file($_FILES['file1']['tmp_name'][$i]) && !file_exists("uploads/$fileName")){
-
+		if(is_file($_FILES['file1']['tmp_name'][$i])){
 			if(move_uploaded_file($fileTmpLoc, "uploads/$fileName")){
 			    showMessage("$fileName upload is complete");
 			} else {
 			    echo "move_uploaded_file function failed";
 			    showMessage("Erro no Upload do Arquivo!!");
 			}
-		}
+		} 
+		
 	}
 	shell_exec('chmod 777 -R uploads/*');
 }
